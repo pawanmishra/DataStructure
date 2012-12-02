@@ -20,6 +20,36 @@ namespace Graph
                 g.AddEdge(fromEdge, toEdge);
             }
 
+            DFS(g);
+            BFS(g);
+
+            Console.WriteLine();
+            Console.WriteLine(g.ToString());
+        }
+
+        private static void BFS(Graph g)
+        {
+            BFS bfs = new BFS(g, 0);
+            for (int i = 0; i < g.Vertices; i++)
+            {
+                if (bfs.Marked(i))
+                {
+                    Console.Write(i + " ");
+                }
+            }
+            Console.WriteLine();
+
+            IEnumerable<int> path = bfs.Path(3);
+
+            if (path != null)
+            {
+                path.ToList().ForEach(x => Console.Write(x + " "));
+            }
+            Console.WriteLine();
+        }
+
+        private static void DFS(Graph g)
+        {
             DFS dfs = new DFS(g, 0);
             for (int i = 0; i < g.Vertices; i++)
             {
@@ -28,6 +58,8 @@ namespace Graph
                     Console.Write(i + " ");
                 }
             }
+            Console.WriteLine();
+
 
             if (dfs.Count == g.Vertices)
                 Console.WriteLine("Connected");
@@ -35,14 +67,12 @@ namespace Graph
                 Console.WriteLine("Not Connected");
 
             IEnumerable<int> path = dfs.Path(3);
-            
+
             if (path != null)
             {
                 path.ToList().ForEach(x => Console.Write(x + " "));
             }
-
             Console.WriteLine();
-            Console.WriteLine(g.ToString());
         }
     }
 }
