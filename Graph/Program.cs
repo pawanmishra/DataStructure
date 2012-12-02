@@ -34,6 +34,14 @@ namespace Graph
             else
                 Console.WriteLine("Not Connected");
 
+            IEnumerable<int> path = dfs.Path(3);
+            
+            if (path != null)
+            {
+                path.ToList().ForEach(x => Console.Write(x + " "));
+            }
+
+            Console.WriteLine();
             Console.WriteLine(g.ToString());
         }
     }

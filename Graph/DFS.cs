@@ -10,10 +10,14 @@ namespace Graph
     {
         private bool[] marked;
         private int count;
+        private int[] edgeTo;
+        private int source;
 
         public DFS(Graph g, int sourceVertex)
         {
             marked = new bool[g.Vertices];
+            edgeTo = new int[g.Vertices];
+            source = sourceVertex;
             Search(g, sourceVertex);
         }
 
@@ -26,6 +30,7 @@ namespace Graph
             {
                 if (!marked[vertex])
                 {
+                    edgeTo[vertex] = sourceVertex;
                     Search(g, vertex);
                 }
             }
@@ -39,6 +44,25 @@ namespace Graph
         public int Count
         {
             get { return count; }
+        }
+
+        public bool HasPath(int v)
+        {
+            return Marked(v);
+        }
+
+        public IEnumerable<int> Path(int v)
+        {
+            if (!HasPath(v)) return null;
+            Stack<int> path = new Stack<int>();
+            
+            for (int vertex = v; vertex != source; vertex = edgeTo[vertex])
+            {
+                path.Push(vertex);
+            }
+
+            path.Push(source);
+            return path;
         }
     }
 }
