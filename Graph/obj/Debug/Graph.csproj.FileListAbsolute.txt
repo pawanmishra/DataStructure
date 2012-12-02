@@ -1,0 +1,7 @@
+D:\DataStructure\Graph\bin\Debug\Graph.exe.config
+D:\DataStructure\Graph\obj\Debug\Graph.csprojResolveAssemblyReference.cache
+D:\DataStructure\Graph\bin\Debug\Resources\tinyG.txt
+D:\DataStructure\Graph\bin\Debug\Graph.exe
+D:\DataStructure\Graph\bin\Debug\Graph.pdb
+D:\DataStructure\Graph\obj\Debug\Graph.exe
+D:\DataStructure\Graph\obj\Debug\Graph.pdb
