@@ -20,11 +20,16 @@ namespace Graph
                 g.AddEdge(fromEdge, toEdge);
             }
 
-            DFS(g);
-            BFS(g);
+            //DFS(g);
+            //BFS(g);
+            SymbolGraphTest();
 
             Console.WriteLine();
-            Console.WriteLine(g.ToString());
+        }
+
+        private static void SymbolGraphTest()
+        {
+            SymbolGraph g = new SymbolGraph(@"Resources\movies.txt", @"\");
         }
 
         private static void BFS(Graph g)

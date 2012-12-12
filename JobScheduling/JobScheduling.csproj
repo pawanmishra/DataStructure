@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C8835593-C160-4EFF-92E6-E7F52E228DC7}</ProjectGuid>
+    <ProjectGuid>{36F39F2F-1F73-41E7-8F40-7B09DDD23E86}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Graph</RootNamespace>
-    <AssemblyName>Graph</AssemblyName>
+    <RootNamespace>JobScheduling</RootNamespace>
+    <AssemblyName>JobScheduling</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,22 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BFS.cs" />
-    <Compile Include="DFS.cs" />
-    <Compile Include="Graph.cs" />
-    <Compile Include="GraphExtension.cs" />
+    <Compile Include="DiffJob.cs" />
+    <Compile Include="Job.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SymbolGraph.cs" />
+    <Compile Include="RatioJobTime.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\movies.txt">
+    <Content Include="jobs.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\tinyG.txt">
+    <Content Include="sample.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

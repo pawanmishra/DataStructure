@@ -3,6 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph", "Graph\Graph.csproj", "{C8835593-C160-4EFF-92E6-E7F52E228DC7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{7291B25B-AD7F-4948-9095-E523D82C429D}"
+	ProjectSection(SolutionItems) = preProject
+		Resoruces\movies.txt = Resoruces\movies.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Coursera", "Coursera", "{C8FFA99B-E741-4A9E-A061-B91D2D1EC017}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobScheduling", "JobScheduling\JobScheduling.csproj", "{36F39F2F-1F73-41E7-8F40-7B09DDD23E86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +22,15 @@ Global
 		{C8835593-C160-4EFF-92E6-E7F52E228DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8835593-C160-4EFF-92E6-E7F52E228DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8835593-C160-4EFF-92E6-E7F52E228DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F39F2F-1F73-41E7-8F40-7B09DDD23E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F39F2F-1F73-41E7-8F40-7B09DDD23E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F39F2F-1F73-41E7-8F40-7B09DDD23E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F39F2F-1F73-41E7-8F40-7B09DDD23E86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36F39F2F-1F73-41E7-8F40-7B09DDD23E86} = {C8FFA99B-E741-4A9E-A061-B91D2D1EC017}
 	EndGlobalSection
 EndGlobal

@@ -5,3 +5,4 @@ D:\DataStructure\Graph\bin\Debug\Graph.exe
 D:\DataStructure\Graph\bin\Debug\Graph.pdb
 D:\DataStructure\Graph\obj\Debug\Graph.exe
 D:\DataStructure\Graph\obj\Debug\Graph.pdb
+D:\DataStructure\Graph\bin\Debug\Resources\movies.txt
